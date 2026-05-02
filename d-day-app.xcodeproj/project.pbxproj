@@ -14,6 +14,15 @@
 		83DEEF8F2FA5A0B400036D10 /* d_day_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF8E2FA5A0B400036D10 /* d_day_appTests.swift */; };
 		83DEEF992FA5A0B400036D10 /* d_day_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF982FA5A0B400036D10 /* d_day_appUITests.swift */; };
 		83DEEF9B2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF9A2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift */; };
+		C0DE00000000000000000101 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000201 /* AppRootView.swift */; };
+		C0DE00000000000000000102 /* AnniversaryKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000202 /* AnniversaryKind.swift */; };
+		C0DE00000000000000000103 /* CoupleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000203 /* CoupleProfile.swift */; };
+		C0DE00000000000000000104 /* DayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000204 /* DayEvent.swift */; };
+		C0DE00000000000000000105 /* DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000205 /* DayCounter.swift */; };
+		C0DE00000000000000000106 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000206 /* AppTheme.swift */; };
+		C0DE00000000000000000107 /* EventEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000207 /* EventEditorView.swift */; };
+		C0DE00000000000000000108 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000208 /* HomeView.swift */; };
+		C0DE00000000000000000109 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000209 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		83DEEF942FA5A0B400036D10 /* d-day-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "d-day-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DEEF982FA5A0B400036D10 /* d_day_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d_day_appUITests.swift; sourceTree = "<group>"; };
 		83DEEF9A2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d_day_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000201 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/AppRootView.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000202 /* AnniversaryKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/AnniversaryKind.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000203 /* CoupleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/CoupleProfile.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000204 /* DayEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/DayEvent.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000205 /* DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Utilities/DayCounter.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000206 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem/AppTheme.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000207 /* EventEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/EventEditor/EventEditorView.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000208 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Home/HomeView.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000209 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Settings/SettingsView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,15 @@
 			children = (
 				83DEEF7D2FA5A0B000036D10 /* d_day_appApp.swift */,
 				83DEEF7F2FA5A0B000036D10 /* ContentView.swift */,
+				C0DE00000000000000000201 /* AppRootView.swift */,
+				C0DE00000000000000000202 /* AnniversaryKind.swift */,
+				C0DE00000000000000000203 /* CoupleProfile.swift */,
+				C0DE00000000000000000204 /* DayEvent.swift */,
+				C0DE00000000000000000205 /* DayCounter.swift */,
+				C0DE00000000000000000206 /* AppTheme.swift */,
+				C0DE00000000000000000207 /* EventEditorView.swift */,
+				C0DE00000000000000000208 /* HomeView.swift */,
+				C0DE00000000000000000209 /* SettingsView.swift */,
 				83DEEF812FA5A0B400036D10 /* Assets.xcassets */,
 				83DEEF832FA5A0B400036D10 /* Preview Content */,
 			);
@@ -259,6 +286,15 @@
 			files = (
 				83DEEF802FA5A0B000036D10 /* ContentView.swift in Sources */,
 				83DEEF7E2FA5A0B000036D10 /* d_day_appApp.swift in Sources */,
+				C0DE00000000000000000101 /* AppRootView.swift in Sources */,
+				C0DE00000000000000000102 /* AnniversaryKind.swift in Sources */,
+				C0DE00000000000000000103 /* CoupleProfile.swift in Sources */,
+				C0DE00000000000000000104 /* DayEvent.swift in Sources */,
+				C0DE00000000000000000105 /* DayCounter.swift in Sources */,
+				C0DE00000000000000000106 /* AppTheme.swift in Sources */,
+				C0DE00000000000000000107 /* EventEditorView.swift in Sources */,
+				C0DE00000000000000000108 /* HomeView.swift in Sources */,
+				C0DE00000000000000000109 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +383,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -424,6 +460,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"d-day-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "D-Day";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -452,6 +489,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"d-day-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "D-Day";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,7 +516,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,7 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

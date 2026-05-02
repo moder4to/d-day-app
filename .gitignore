@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Xcode user state
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+
+# Build output
+DerivedData/
+build/
+Build/
+.build/
+
+# SwiftPM
+.swiftpm/
+
+# CocoaPods / Carthage, if ever introduced
+Pods/
+Carthage/Build/
+
+# Fastlane artifacts
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Local environment
+*.env
+*.env.local
