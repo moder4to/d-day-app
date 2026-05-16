@@ -2,12 +2,12 @@ import Foundation
 import SwiftUI
 
 enum AppTheme {
-    static let primary = Color(hex: "FF6B8A")
-    static let secondary = Color(hex: "6A7FDB")
-    static let background = Color(hex: "FFF8FA")
+    static let primary = Color(hex: "2F6FED")
+    static let secondary = Color(hex: "0F766E")
+    static let background = Color(hex: "F7F8FA")
     static let surface = Color.white
-    static let textPrimary = Color(hex: "1F1D2B")
-    static let textSecondary = Color(hex: "6E6A7A")
+    static let textPrimary = Color(hex: "111827")
+    static let textSecondary = Color(hex: "6B7280")
 }
 
 extension Color {

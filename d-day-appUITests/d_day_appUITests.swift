@@ -11,7 +11,7 @@ final class d_day_appUITests: XCTestCase {
 
         XCTAssertTrue(
             app.staticTexts["D-Day"].waitForExistence(timeout: 3) ||
-            app.navigationBars["우리의 날"].waitForExistence(timeout: 3)
+            app.navigationBars["D-Day"].waitForExistence(timeout: 3)
         )
     }
 

@@ -3,26 +3,70 @@ import SwiftUI
 
 struct AppRootView: View {
     @Query private var profiles: [CoupleProfile]
+    @Query(sort: \DayEvent.targetDate, order: .forward) private var events: [DayEvent]
     @State private var selectedTab = AppTab.home
 
     var body: some View {
-        if profiles.isEmpty {
-            OnboardingView()
-        } else {
-            TabView(selection: $selectedTab) {
-                HomeView()
-                    .tabItem {
-                        Label("홈", systemImage: "heart.fill")
-                    }
-                    .tag(AppTab.home)
+        Group {
+            if profiles.isEmpty {
+                OnboardingView()
+            } else {
+                TabView(selection: $selectedTab) {
+                    HomeView()
+                        .tabItem {
+                            Label("홈", systemImage: "calendar")
+                        }
+                        .tag(AppTab.home)
 
-                SettingsView()
-                    .tabItem {
-                        Label("설정", systemImage: "gearshape.fill")
-                    }
-                    .tag(AppTab.settings)
+                    SettingsView()
+                        .tabItem {
+                            Label("설정", systemImage: "gearshape.fill")
+                        }
+                        .tag(AppTab.settings)
+                }
+                .tint(AppTheme.primary)
             }
-            .tint(AppTheme.primary)
+        }
+        .onAppear {
+            syncExternalSurfaces()
+        }
+        .onChange(of: systemSurfaceSignature) {
+            syncExternalSurfaces()
+        }
+    }
+
+    private var systemSurfaceSignature: String {
+        let profileSignature = profiles.map {
+            [
+                $0.firstName,
+                $0.partnerName,
+                String($0.startedAt.timeIntervalSince1970),
+                $0.memo,
+                String($0.updatedAt.timeIntervalSince1970)
+            ].joined(separator: "|")
+        }
+
+        let eventSignature = events.map {
+            [
+                $0.title,
+                String($0.targetDate.timeIntervalSince1970),
+                $0.kindRawValue,
+                $0.repeatRuleRawValue,
+                $0.note,
+                $0.colorHex,
+                String($0.isPinned),
+                String($0.updatedAt.timeIntervalSince1970)
+            ].joined(separator: "|")
+        }
+
+        return (profileSignature + eventSignature).joined(separator: "#")
+    }
+
+    private func syncExternalSurfaces() {
+        SystemSurfaceSync.sync(profiles: profiles, events: events)
+
+        Task {
+            await NotificationScheduler.rescheduleAll(events: events)
         }
     }
 }
@@ -61,7 +105,7 @@ private struct OnboardingView: View {
                                 .font(.system(size: 44, weight: .bold, design: .rounded))
                                 .foregroundStyle(AppTheme.textPrimary)
 
-                            Text("둘만의 첫날을 저장하고 중요한 날들을 차곡차곡 모아보세요.")
+                            Text("시작일과 일정을 저장해 남은 날을 확인하세요.")
                                 .font(.body)
                                 .foregroundStyle(AppTheme.textSecondary)
                         }
@@ -77,7 +121,7 @@ private struct OnboardingView: View {
                                 .submitLabel(.next)
 
                             DatePicker(
-                                "만난 날",
+                                "시작일",
                                 selection: $startedAt,
                                 displayedComponents: .date
                             )
@@ -100,7 +144,7 @@ private struct OnboardingView: View {
                         Button {
                             saveProfile()
                         } label: {
-                            Label("시작하기", systemImage: "heart.fill")
+                            Label("시작하기", systemImage: "checkmark")
                                 .frame(maxWidth: .infinity)
                         }
                         .buttonStyle(.borderedProminent)

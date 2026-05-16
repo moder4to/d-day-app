@@ -14,7 +14,7 @@ enum AnniversaryKind: String, CaseIterable, Codable, Identifiable {
     var title: String {
         switch self {
         case .firstDay:
-            return "만난 날"
+            return "시작일"
         case .anniversary:
             return "기념일"
         case .birthday:
@@ -29,9 +29,9 @@ enum AnniversaryKind: String, CaseIterable, Codable, Identifiable {
     var symbolName: String {
         switch self {
         case .firstDay:
-            return "heart.fill"
+            return "flag.fill"
         case .anniversary:
-            return "sparkles"
+            return "calendar.badge.clock"
         case .birthday:
             return "gift.fill"
         case .travel:

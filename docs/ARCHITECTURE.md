@@ -2,7 +2,7 @@
 
 ## 기술 선택
 
-- SwiftUI: iOS 17 기준의 기본 UI 프레임워크
+- SwiftUI: iOS 18 기준의 기본 UI 프레임워크
 - SwiftData: MVP의 로컬 저장소
 - MVVM-lite: 화면 상태가 커지는 시점부터 ViewModel을 도입
 - Foundation Calendar: D-Day 계산의 기준 API
@@ -20,6 +20,10 @@ d-day-app/
       AnniversaryKind.swift
       CoupleProfile.swift
       DayEvent.swift
+    Shared/
+      DaySurfaceConstants.swift
+      DaySurfaceSnapshot.swift
+      OpenDdayAppIntent.swift
     Utilities/
       DayCounter.swift
   DesignSystem/
@@ -33,17 +37,21 @@ d-day-app/
       SettingsView.swift
   Assets.xcassets/
   Preview Content/
+d-day-appWidgets/
+  d_day_appWidgetsBundle.swift
+  DDayLockScreenWidget.swift
+  DDayControlWidget.swift
 ```
 
 ## 데이터 모델
 
 ### CoupleProfile
 
-커플의 기본 정보를 저장합니다.
+기준 프로필 정보를 저장합니다.
 
 - 내 이름
 - 상대 이름
-- 만난 날짜
+- 시작일
 - 메모
 
 ### DayEvent
@@ -63,7 +71,7 @@ d-day-app/
 - 미래 날짜: `D-n`
 - 오늘: `D-Day`
 - 지난 날짜: `D+n`
-- 만난 날짜처럼 시작일을 세는 경우에는 첫날을 1일로 계산합니다.
+- 시작일을 세는 경우에는 첫날을 1일로 계산합니다.
 - 매년 반복 일정은 다음 발생일 기준으로 계산합니다.
 - 2월 29일 반복 일정은 비윤년에 2월 28일로 계산합니다.
 
@@ -75,7 +83,13 @@ d-day-app/
 
 ## 저장소 전략
 
-MVP에서는 SwiftData 로컬 저장을 사용합니다. 커플 공유나 기기 간 동기화가 필요해지는 시점에 CloudKit 전환을 검토합니다.
+MVP에서는 SwiftData 로컬 저장을 사용합니다. 공유나 기기 간 동기화가 필요해지는 시점에 CloudKit 전환을 검토합니다.
+
+## 빠른 확인 전략
+
+iOS 18 기준으로 잠금화면 위젯과 제어센터 컨트롤을 제품 표면에 포함합니다. 앱 본체는 SwiftData 모델에서 대표 D-Day 스냅샷을 만들고, `group.yhb.d-day-app` App Group의 UserDefaults에 JSON으로 저장합니다. Widget Extension은 이 스냅샷을 읽어 잠금화면 accessory 위젯과 제어센터 `ControlWidget`을 렌더링합니다.
+
+앱에서 데이터가 바뀌면 `SystemSurfaceSync`가 `WidgetCenter`와 `ControlCenter`에 reload를 요청합니다. 실제 기기 배포 전에는 Apple Developer 계정에서 앱 타깃과 `d-day-appWidgets` 타깃 모두에 동일한 App Group capability를 등록해야 합니다.
 
 ## ViewModel 도입 기준
 

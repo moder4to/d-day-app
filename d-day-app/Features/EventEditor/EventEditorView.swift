@@ -4,6 +4,7 @@ import SwiftUI
 struct EventEditorView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var modelContext
+    @Query private var events: [DayEvent]
 
     private let event: DayEvent?
 
@@ -72,7 +73,7 @@ struct EventEditorView: View {
                     }
                 }
             }
-            .navigationTitle(event == nil ? "D-Day 추가" : "D-Day 수정")
+            .navigationTitle(event == nil ? "일정 추가" : "일정 수정")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -96,6 +97,10 @@ struct EventEditorView: View {
         let trimmedNote = note.trimmingCharacters(in: .whitespacesAndNewlines)
 
         if let event {
+            if isPinned {
+                unpinOtherEvents(except: event)
+            }
+
             event.title = trimmedTitle
             event.targetDate = targetDate
             event.kind = kind
@@ -115,20 +120,38 @@ struct EventEditorView: View {
                 isPinned: isPinned
             )
 
+            if isPinned {
+                unpinOtherEvents(except: event)
+            }
+
             modelContext.insert(event)
         }
 
         try? modelContext.save()
+        Task {
+            await NotificationScheduler.rescheduleAll(events: events)
+        }
         dismiss()
     }
 
     private func deleteEvent() {
         if let event {
+            NotificationScheduler.cancel(event: event)
             modelContext.delete(event)
             try? modelContext.save()
+            Task {
+                await NotificationScheduler.rescheduleAll(events: events.filter { $0 !== event })
+            }
         }
 
         dismiss()
+    }
+
+    private func unpinOtherEvents(except selectedEvent: DayEvent) {
+        for event in events where event !== selectedEvent && event.isPinned {
+            event.isPinned = false
+            event.updatedAt = .now
+        }
     }
 }
 
@@ -169,12 +192,12 @@ private struct ColorPreset: Identifiable {
     let name: String
     let hex: String
 
-    static let `default` = ColorPreset(id: "coral", name: "코랄", hex: "FF6B8A")
+    static let `default` = ColorPreset(id: "blue", name: "블루", hex: "2F6FED")
 
     static let all: [ColorPreset] = [
         .default,
-        ColorPreset(id: "violet", name: "바이올렛", hex: "8B6FDB"),
-        ColorPreset(id: "blue", name: "블루", hex: "4F8FD9"),
+        ColorPreset(id: "teal", name: "틸", hex: "0F766E"),
+        ColorPreset(id: "violet", name: "바이올렛", hex: "6D5BD0"),
         ColorPreset(id: "mint", name: "민트", hex: "3AAFA9"),
         ColorPreset(id: "amber", name: "앰버", hex: "F5A623")
     ]

@@ -11,18 +11,33 @@
 		83DEEF802FA5A0B000036D10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF7F2FA5A0B000036D10 /* ContentView.swift */; };
 		83DEEF822FA5A0B400036D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DEEF812FA5A0B400036D10 /* Assets.xcassets */; };
 		83DEEF852FA5A0B400036D10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DEEF842FA5A0B400036D10 /* Preview Assets.xcassets */; };
+		C0DE00000000000000000118 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000218 /* PrivacyInfo.xcprivacy */; };
+		C0DE00000000000000000119 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000219 /* PrivacyInfo.xcprivacy */; };
 		83DEEF8F2FA5A0B400036D10 /* d_day_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF8E2FA5A0B400036D10 /* d_day_appTests.swift */; };
 		83DEEF992FA5A0B400036D10 /* d_day_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF982FA5A0B400036D10 /* d_day_appUITests.swift */; };
 		83DEEF9B2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DEEF9A2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift */; };
-		C0DE00000000000000000101 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000201 /* AppRootView.swift */; };
-		C0DE00000000000000000102 /* AnniversaryKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000202 /* AnniversaryKind.swift */; };
-		C0DE00000000000000000103 /* CoupleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000203 /* CoupleProfile.swift */; };
-		C0DE00000000000000000104 /* DayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000204 /* DayEvent.swift */; };
-		C0DE00000000000000000105 /* DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000205 /* DayCounter.swift */; };
-		C0DE00000000000000000106 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000206 /* AppTheme.swift */; };
-		C0DE00000000000000000107 /* EventEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000207 /* EventEditorView.swift */; };
-		C0DE00000000000000000108 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000208 /* HomeView.swift */; };
-		C0DE00000000000000000109 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000209 /* SettingsView.swift */; };
+		C0DE00000000000000000101 /* App/AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000201 /* App/AppRootView.swift */; };
+		C0DE00000000000000000102 /* Core/Models/AnniversaryKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000202 /* Core/Models/AnniversaryKind.swift */; };
+		C0DE00000000000000000103 /* Core/Models/CoupleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000203 /* Core/Models/CoupleProfile.swift */; };
+		C0DE00000000000000000104 /* Core/Models/DayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000204 /* Core/Models/DayEvent.swift */; };
+		C0DE00000000000000000105 /* Core/Utilities/DayCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000205 /* Core/Utilities/DayCounter.swift */; };
+		C0DE00000000000000000106 /* DesignSystem/AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000206 /* DesignSystem/AppTheme.swift */; };
+		C0DE00000000000000000107 /* Features/EventEditor/EventEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000207 /* Features/EventEditor/EventEditorView.swift */; };
+		C0DE00000000000000000108 /* Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000208 /* Features/Home/HomeView.swift */; };
+		C0DE00000000000000000109 /* Features/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000209 /* Features/Settings/SettingsView.swift */; };
+		C0DE0000000000000000010A /* Core/Shared/DaySurfaceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020A /* Core/Shared/DaySurfaceConstants.swift */; };
+		C0DE0000000000000000010B /* Core/Shared/DaySurfaceSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020B /* Core/Shared/DaySurfaceSnapshot.swift */; };
+		C0DE0000000000000000010C /* Core/Shared/DaySurfaceSnapshotFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020C /* Core/Shared/DaySurfaceSnapshotFactory.swift */; };
+		C0DE0000000000000000010D /* Core/Shared/SystemSurfaceSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020D /* Core/Shared/SystemSurfaceSync.swift */; };
+		C0DE0000000000000000010E /* Core/Shared/OpenDdayAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020E /* Core/Shared/OpenDdayAppIntent.swift */; };
+		C0DE00000000000000000116 /* Core/Notifications/NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000217 /* Core/Notifications/NotificationScheduler.swift */; };
+		C0DE0000000000000000010F /* Core/Shared/DaySurfaceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020A /* Core/Shared/DaySurfaceConstants.swift */; };
+		C0DE00000000000000000110 /* Core/Shared/DaySurfaceSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020B /* Core/Shared/DaySurfaceSnapshot.swift */; };
+		C0DE00000000000000000111 /* Core/Shared/OpenDdayAppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE0000000000000000020E /* Core/Shared/OpenDdayAppIntent.swift */; };
+		C0DE00000000000000000112 /* d_day_appWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000212 /* d_day_appWidgetsBundle.swift */; };
+		C0DE00000000000000000113 /* DDayLockScreenWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000213 /* DDayLockScreenWidget.swift */; };
+		C0DE00000000000000000114 /* DDayControlWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000214 /* DDayControlWidget.swift */; };
+		C0DE00000000000000000115 /* d-day-appWidgets.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C0DE00000000000000000216 /* d-day-appWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +55,28 @@
 			remoteGlobalIDString = 83DEEF792FA5A0B000036D10;
 			remoteInfo = "d-day-app";
 		};
+		C0DE00000000000000000406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83DEEF722FA5A0B000036D10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0DE00000000000000000400;
+			remoteInfo = "d-day-appWidgets";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0DE00000000000000000404 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0DE00000000000000000115 /* d-day-appWidgets.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83DEEF7A2FA5A0B000036D10 /* d-day-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "d-day-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,15 +89,30 @@
 		83DEEF942FA5A0B400036D10 /* d-day-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "d-day-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DEEF982FA5A0B400036D10 /* d_day_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d_day_appUITests.swift; sourceTree = "<group>"; };
 		83DEEF9A2FA5A0B400036D10 /* d_day_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d_day_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C0DE00000000000000000201 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/AppRootView.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000202 /* AnniversaryKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/AnniversaryKind.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000203 /* CoupleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/CoupleProfile.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000204 /* DayEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Models/DayEvent.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000205 /* DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core/Utilities/DayCounter.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000206 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DesignSystem/AppTheme.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000207 /* EventEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/EventEditor/EventEditorView.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000208 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Home/HomeView.swift"; sourceTree = "<group>"; };
-		C0DE00000000000000000209 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Features/Settings/SettingsView.swift"; sourceTree = "<group>"; };
+		C0DE00000000000000000201 /* App/AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000202 /* Core/Models/AnniversaryKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/AnniversaryKind.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000203 /* Core/Models/CoupleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/CoupleProfile.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000204 /* Core/Models/DayEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Models/DayEvent.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000205 /* Core/Utilities/DayCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/DayCounter.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000206 /* DesignSystem/AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem/AppTheme.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000207 /* Features/EventEditor/EventEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/EventEditor/EventEditorView.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000208 /* Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000209 /* Features/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		C0DE0000000000000000020A /* Core/Shared/DaySurfaceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Shared/DaySurfaceConstants.swift; sourceTree = "<group>"; };
+		C0DE0000000000000000020B /* Core/Shared/DaySurfaceSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Shared/DaySurfaceSnapshot.swift; sourceTree = "<group>"; };
+		C0DE0000000000000000020C /* Core/Shared/DaySurfaceSnapshotFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Shared/DaySurfaceSnapshotFactory.swift; sourceTree = "<group>"; };
+		C0DE0000000000000000020D /* Core/Shared/SystemSurfaceSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Shared/SystemSurfaceSync.swift; sourceTree = "<group>"; };
+		C0DE0000000000000000020E /* Core/Shared/OpenDdayAppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Shared/OpenDdayAppIntent.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000210 /* d-day-app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "d-day-app.entitlements"; sourceTree = "<group>"; };
+		C0DE00000000000000000211 /* d-day-appWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "d-day-appWidgets.entitlements"; sourceTree = "<group>"; };
+		C0DE00000000000000000212 /* d_day_appWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = d_day_appWidgetsBundle.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000213 /* DDayLockScreenWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayLockScreenWidget.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000214 /* DDayControlWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayControlWidget.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0DE00000000000000000216 /* d-day-appWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "d-day-appWidgets.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0DE00000000000000000217 /* Core/Notifications/NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Notifications/NotificationScheduler.swift; sourceTree = "<group>"; };
+		C0DE00000000000000000218 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C0DE00000000000000000219 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +137,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0DE00000000000000000401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				83DEEF7C2FA5A0B000036D10 /* d-day-app */,
+				C0DE00000000000000000301 /* d-day-appWidgets */,
 				83DEEF8D2FA5A0B400036D10 /* d-day-appTests */,
 				83DEEF972FA5A0B400036D10 /* d-day-appUITests */,
 				83DEEF7B2FA5A0B000036D10 /* Products */,
@@ -103,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				83DEEF7A2FA5A0B000036D10 /* d-day-app.app */,
+				C0DE00000000000000000216 /* d-day-appWidgets.appex */,
 				83DEEF8A2FA5A0B400036D10 /* d-day-appTests.xctest */,
 				83DEEF942FA5A0B400036D10 /* d-day-appUITests.xctest */,
 			);
@@ -114,15 +174,23 @@
 			children = (
 				83DEEF7D2FA5A0B000036D10 /* d_day_appApp.swift */,
 				83DEEF7F2FA5A0B000036D10 /* ContentView.swift */,
-				C0DE00000000000000000201 /* AppRootView.swift */,
-				C0DE00000000000000000202 /* AnniversaryKind.swift */,
-				C0DE00000000000000000203 /* CoupleProfile.swift */,
-				C0DE00000000000000000204 /* DayEvent.swift */,
-				C0DE00000000000000000205 /* DayCounter.swift */,
-				C0DE00000000000000000206 /* AppTheme.swift */,
-				C0DE00000000000000000207 /* EventEditorView.swift */,
-				C0DE00000000000000000208 /* HomeView.swift */,
-				C0DE00000000000000000209 /* SettingsView.swift */,
+				C0DE00000000000000000201 /* App/AppRootView.swift */,
+				C0DE00000000000000000202 /* Core/Models/AnniversaryKind.swift */,
+				C0DE00000000000000000203 /* Core/Models/CoupleProfile.swift */,
+				C0DE00000000000000000204 /* Core/Models/DayEvent.swift */,
+				C0DE00000000000000000205 /* Core/Utilities/DayCounter.swift */,
+				C0DE00000000000000000206 /* DesignSystem/AppTheme.swift */,
+				C0DE00000000000000000207 /* Features/EventEditor/EventEditorView.swift */,
+				C0DE00000000000000000208 /* Features/Home/HomeView.swift */,
+				C0DE00000000000000000209 /* Features/Settings/SettingsView.swift */,
+				C0DE0000000000000000020A /* Core/Shared/DaySurfaceConstants.swift */,
+				C0DE0000000000000000020B /* Core/Shared/DaySurfaceSnapshot.swift */,
+				C0DE0000000000000000020C /* Core/Shared/DaySurfaceSnapshotFactory.swift */,
+				C0DE0000000000000000020D /* Core/Shared/SystemSurfaceSync.swift */,
+				C0DE0000000000000000020E /* Core/Shared/OpenDdayAppIntent.swift */,
+				C0DE00000000000000000217 /* Core/Notifications/NotificationScheduler.swift */,
+				C0DE00000000000000000210 /* d-day-app.entitlements */,
+				C0DE00000000000000000218 /* PrivacyInfo.xcprivacy */,
 				83DEEF812FA5A0B400036D10 /* Assets.xcassets */,
 				83DEEF832FA5A0B400036D10 /* Preview Content */,
 			);
@@ -154,6 +222,19 @@
 			path = "d-day-appUITests";
 			sourceTree = "<group>";
 		};
+		C0DE00000000000000000301 /* d-day-appWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				C0DE00000000000000000212 /* d_day_appWidgetsBundle.swift */,
+				C0DE00000000000000000213 /* DDayLockScreenWidget.swift */,
+				C0DE00000000000000000214 /* DDayControlWidget.swift */,
+				C0DE00000000000000000215 /* Info.plist */,
+				C0DE00000000000000000211 /* d-day-appWidgets.entitlements */,
+				C0DE00000000000000000219 /* PrivacyInfo.xcprivacy */,
+			);
+			path = "d-day-appWidgets";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,10 +245,12 @@
 				83DEEF762FA5A0B000036D10 /* Sources */,
 				83DEEF772FA5A0B000036D10 /* Frameworks */,
 				83DEEF782FA5A0B000036D10 /* Resources */,
+				C0DE00000000000000000404 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C0DE00000000000000000405 /* PBXTargetDependency */,
 			);
 			name = "d-day-app";
 			productName = "d-day-app";
@@ -210,6 +293,23 @@
 			productReference = 83DEEF942FA5A0B400036D10 /* d-day-appUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C0DE00000000000000000400 /* d-day-appWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0DE00000000000000000502 /* Build configuration list for PBXNativeTarget "d-day-appWidgets" */;
+			buildPhases = (
+				C0DE00000000000000000403 /* Sources */,
+				C0DE00000000000000000401 /* Frameworks */,
+				C0DE00000000000000000402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "d-day-appWidgets";
+			productName = "d-day-appWidgets";
+			productReference = C0DE00000000000000000216 /* d-day-appWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,7 +318,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					83DEEF792FA5A0B000036D10 = {
 						CreatedOnToolsVersion = 15.2;
@@ -231,15 +331,19 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 83DEEF792FA5A0B000036D10;
 					};
+					C0DE00000000000000000400 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 				};
 			};
 			buildConfigurationList = 83DEEF752FA5A0B000036D10 /* Build configuration list for PBXProject "d-day-app" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ko;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 83DEEF712FA5A0B000036D10;
 			productRefGroup = 83DEEF7B2FA5A0B000036D10 /* Products */;
@@ -247,6 +351,7 @@
 			projectRoot = "";
 			targets = (
 				83DEEF792FA5A0B000036D10 /* d-day-app */,
+				C0DE00000000000000000400 /* d-day-appWidgets */,
 				83DEEF892FA5A0B400036D10 /* d-day-appTests */,
 				83DEEF932FA5A0B400036D10 /* d-day-appUITests */,
 			);
@@ -260,6 +365,7 @@
 			files = (
 				83DEEF852FA5A0B400036D10 /* Preview Assets.xcassets in Resources */,
 				83DEEF822FA5A0B400036D10 /* Assets.xcassets in Resources */,
+				C0DE00000000000000000118 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +383,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0DE00000000000000000402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE00000000000000000119 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -286,15 +400,21 @@
 			files = (
 				83DEEF802FA5A0B000036D10 /* ContentView.swift in Sources */,
 				83DEEF7E2FA5A0B000036D10 /* d_day_appApp.swift in Sources */,
-				C0DE00000000000000000101 /* AppRootView.swift in Sources */,
-				C0DE00000000000000000102 /* AnniversaryKind.swift in Sources */,
-				C0DE00000000000000000103 /* CoupleProfile.swift in Sources */,
-				C0DE00000000000000000104 /* DayEvent.swift in Sources */,
-				C0DE00000000000000000105 /* DayCounter.swift in Sources */,
-				C0DE00000000000000000106 /* AppTheme.swift in Sources */,
-				C0DE00000000000000000107 /* EventEditorView.swift in Sources */,
-				C0DE00000000000000000108 /* HomeView.swift in Sources */,
-				C0DE00000000000000000109 /* SettingsView.swift in Sources */,
+				C0DE00000000000000000101 /* App/AppRootView.swift in Sources */,
+				C0DE00000000000000000102 /* Core/Models/AnniversaryKind.swift in Sources */,
+				C0DE00000000000000000103 /* Core/Models/CoupleProfile.swift in Sources */,
+				C0DE00000000000000000104 /* Core/Models/DayEvent.swift in Sources */,
+				C0DE00000000000000000105 /* Core/Utilities/DayCounter.swift in Sources */,
+				C0DE00000000000000000106 /* DesignSystem/AppTheme.swift in Sources */,
+				C0DE00000000000000000107 /* Features/EventEditor/EventEditorView.swift in Sources */,
+				C0DE00000000000000000108 /* Features/Home/HomeView.swift in Sources */,
+				C0DE00000000000000000109 /* Features/Settings/SettingsView.swift in Sources */,
+				C0DE0000000000000000010A /* Core/Shared/DaySurfaceConstants.swift in Sources */,
+				C0DE0000000000000000010B /* Core/Shared/DaySurfaceSnapshot.swift in Sources */,
+				C0DE0000000000000000010C /* Core/Shared/DaySurfaceSnapshotFactory.swift in Sources */,
+				C0DE0000000000000000010D /* Core/Shared/SystemSurfaceSync.swift in Sources */,
+				C0DE0000000000000000010E /* Core/Shared/OpenDdayAppIntent.swift in Sources */,
+				C0DE00000000000000000116 /* Core/Notifications/NotificationScheduler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +435,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C0DE00000000000000000403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DE0000000000000000010F /* Core/Shared/DaySurfaceConstants.swift in Sources */,
+				C0DE00000000000000000110 /* Core/Shared/DaySurfaceSnapshot.swift in Sources */,
+				C0DE00000000000000000111 /* Core/Shared/OpenDdayAppIntent.swift in Sources */,
+				C0DE00000000000000000112 /* d_day_appWidgetsBundle.swift in Sources */,
+				C0DE00000000000000000113 /* DDayLockScreenWidget.swift in Sources */,
+				C0DE00000000000000000114 /* DDayControlWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -327,6 +460,11 @@
 			isa = PBXTargetDependency;
 			target = 83DEEF792FA5A0B000036D10 /* d-day-app */;
 			targetProxy = 83DEEF952FA5A0B400036D10 /* PBXContainerItemProxy */;
+		};
+		C0DE00000000000000000405 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0DE00000000000000000400 /* d-day-appWidgets */;
+			targetProxy = C0DE00000000000000000406 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,12 +521,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -440,11 +579,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -455,22 +595,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "d-day-app/d-day-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"d-day-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "D-Day";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -484,22 +627,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "d-day-app/d-day-app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"d-day-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "D-Day";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -511,13 +657,12 @@
 		83DEEFA22FA5A0B400036D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -530,13 +675,12 @@
 		83DEEFA32FA5A0B400036D10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -549,11 +693,10 @@
 		83DEEFA52FA5A0B400036D10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -566,17 +709,78 @@
 		83DEEFA62FA5A0B400036D10 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-appUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "d-day-app";
+			};
+			name = Release;
+		};
+		C0DE00000000000000000500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "d-day-appWidgets/d-day-appWidgets.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "d-day-appWidgets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-app.widgets";
+				PRODUCT_BUNDLE_PACKAGE_TYPE = "XPC!";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = appex;
+			};
+			name = Debug;
+		};
+		C0DE00000000000000000501 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = "d-day-appWidgets/d-day-appWidgets.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "d-day-appWidgets/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "yhb.d-day-app.widgets";
+				PRODUCT_BUNDLE_PACKAGE_TYPE = "XPC!";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = appex;
 			};
 			name = Release;
 		};
@@ -615,6 +819,15 @@
 			buildConfigurations = (
 				83DEEFA52FA5A0B400036D10 /* Debug */,
 				83DEEFA62FA5A0B400036D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0DE00000000000000000502 /* Build configuration list for PBXNativeTarget "d-day-appWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0DE00000000000000000500 /* Debug */,
+				C0DE00000000000000000501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

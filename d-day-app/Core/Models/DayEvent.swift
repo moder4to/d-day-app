@@ -21,6 +21,7 @@ enum RepeatRule: String, CaseIterable, Codable, Identifiable {
 
 @Model
 final class DayEvent {
+    var stableID: String
     var title: String
     var targetDate: Date
     var kindRawValue: String
@@ -50,6 +51,7 @@ final class DayEvent {
     }
 
     init(
+        stableID: String = UUID().uuidString,
         title: String,
         targetDate: Date,
         kind: AnniversaryKind = .custom,
@@ -60,6 +62,7 @@ final class DayEvent {
         createdAt: Date = .now,
         updatedAt: Date = .now
     ) {
+        self.stableID = stableID
         self.title = title
         self.targetDate = targetDate
         self.kindRawValue = kind.rawValue

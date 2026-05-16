@@ -96,4 +96,63 @@ final class d_day_appTests: XCTestCase {
             DayCounter.eventSortValue(targetDate: future, repeatRule: .none, from: today, calendar: calendar)
         )
     }
+
+    func testSurfaceSnapshotUsesFallbackWithoutProfileAndEvents() throws {
+        let today = try XCTUnwrap(Calendar(identifier: .gregorian).date(from: DateComponents(year: 2026, month: 5, day: 2)))
+        let snapshot = DaySurfaceSnapshotFactory.make(profiles: [], events: [], from: today)
+
+        XCTAssertEqual(snapshot.coupleTitle, "시작일")
+        XCTAssertEqual(snapshot.daysText, "1일째")
+        XCTAssertEqual(snapshot.eventTitle, "첫 D-Day")
+        XCTAssertEqual(snapshot.ddayText, "D-Day")
+    }
+
+    func testSurfaceSnapshotPrefersPinnedEvent() throws {
+        let calendar = Calendar(identifier: .gregorian)
+        let today = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 2)))
+        let profile = CoupleProfile(
+            firstName: "A",
+            partnerName: "B",
+            startedAt: try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 1)))
+        )
+        let nearest = DayEvent(
+            title: "가까운 날",
+            targetDate: try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 3))),
+            isPinned: false
+        )
+        let pinned = DayEvent(
+            title: "고정된 날",
+            targetDate: try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 12))),
+            isPinned: true
+        )
+
+        let snapshot = DaySurfaceSnapshotFactory.make(
+            profiles: [profile],
+            events: [nearest, pinned],
+            from: today
+        )
+
+        XCTAssertEqual(snapshot.coupleTitle, "A & B")
+        XCTAssertEqual(snapshot.daysText, "2일째")
+        XCTAssertEqual(snapshot.eventTitle, "고정된 날")
+        XCTAssertEqual(snapshot.ddayText, "D-10")
+    }
+
+    func testNotificationIdentifiersUseStableEventID() throws {
+        let calendar = Calendar(identifier: .gregorian)
+        let event = DayEvent(
+            stableID: "event-123",
+            title: "기념일",
+            targetDate: try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 5, day: 12)))
+        )
+
+        XCTAssertEqual(
+            NotificationScheduler.identifiers(for: event),
+            [
+                "day-event.event-123.offset.0",
+                "day-event.event-123.offset.1",
+                "day-event.event-123.offset.7"
+            ]
+        )
+    }
 }

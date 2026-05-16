@@ -5,7 +5,7 @@
 현재 개발 환경은 다음처럼 나눕니다.
 
 - Windows: 문서 작성, 소스 수정, 커밋, 푸시
-- MacBook Pro 2017: pull, Xcode 프로젝트 관리, 빌드, 테스트
+- Mac: pull, Xcode 프로젝트 관리, 빌드, 테스트
 
 Windows에 Git이 설치되어 있지 않다면 먼저 Git for Windows를 설치하고 PowerShell을 새로 열어야 합니다.
 
